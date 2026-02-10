@@ -17,6 +17,8 @@ int main(void)
         {
             break;
         }
+
+        line[]
     }
 
     free(line);
