@@ -17,8 +17,8 @@ int main(void)
         {
             break;
         }
-
-        pause();
     }
+
+    free(line);
     return 0;
 }
