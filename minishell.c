@@ -7,12 +7,13 @@ int main(void)
 {
     char *line = NULL;
     size_t len = 0;
+    int EOS = -1;
 
     while (1)
     {
         write(1, "$ ", 2);
 
-        if (getline(&line, &len, stdin) == -1)
+        if (getline(&line, &len, stdin) == EOS)
         {
             break;
         }
