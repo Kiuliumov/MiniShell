@@ -7,6 +7,8 @@ int main(void)
 {
     char *line = NULL;
     size_t len = 0;
+    char *args[100];
+    int i = 0;
     int EOS = -1;
 
     while (1)
@@ -18,7 +20,7 @@ int main(void)
             break;
         }
 
-        line[]
+        line[strcspn(line, "\n")] = '\0';
     }
 
     free(line);
